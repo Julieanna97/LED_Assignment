@@ -11,8 +11,8 @@ void USART2_Init(void){      // construction for UART function
  GPIOA->MODER &=~0x00F0;  // Set alt. function of PA2, PA3 to reset state
  GPIOA->MODER |= 0x00A0;  //Enable alt.function for PA2, PA3
 
- GPIOA->AFR[0] &= ~0xFF00; // Set type of alternative function to AF7
- GPIOA->AFR[0] |= 0x7700; 
+ GPIOA->AFR[0] &= ~0xFF00; // reset the state of alternate function register
+ GPIOA->AFR[0] |= 0x7700; // Set type of alternative function to AF7
 
 
 USART2->BRR  =  0x0683; // Manage the baud rate on the development board
