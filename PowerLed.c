@@ -18,38 +18,38 @@ void PowerLed_ctor(PowerLed_Type * const me,
 									 
 void PowerLed_setCurrent(PowerLed_Type * const me,LedCurrent_Type  _current ){
 	
- me->current = _current;
+    me->current = _current;
 }
 
 void PowerLed_setDiameter(PowerLed_Type * const me, LedDiamter_Type _diameter){
-	
-	 me->diameter = _diameter;
+    
+    me->diameter = _diameter;
 }
 
 void PowerLed_setVoltage(PowerLed_Type *const me, LedVoltage_Type _voltage){
 
-  me->voltage = _voltage;
+    me->voltage = _voltage;
 }
 
 
 led_elec_type PowerLed_computePower(PowerLed_Type * const me){
 
-  return(me->current * me->voltage);
+    return(me->current * me->voltage);
 }
 
 
 led_elec_type PowerLed_getCurrent(PowerLed_Type * const me){
 
-   return me->current;
+    return me->current;
 }
 
 led_elec_type PowerLed_getDiameter(PowerLed_Type * const me){
 
-  return me->diameter;
+    return me->diameter;
 }
 
 
 led_elec_type PowerLed_getVoltage(PowerLed_Type * const me){
-
- return me->voltage;
+    
+    return me->voltage;
 }
