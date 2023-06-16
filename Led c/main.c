@@ -19,4 +19,6 @@ int main(){   // main function
 
 	Led_setState(&led1, ON);
 
+	return 0;
+
 }

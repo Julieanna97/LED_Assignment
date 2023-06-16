@@ -1,4 +1,5 @@
 #include "PowerLed.h"
+
 void PowerLed_ctor(PowerLed_Type * const me,
 									 LedColor_Type   _color,
 									 LedState_Type	_state,
@@ -6,7 +7,7 @@ void PowerLed_ctor(PowerLed_Type * const me,
 									 LedCurrent_Type   _current,
 									 LedVoltage_Type  _voltage){
 										 
-		
+/* assign parameters to initialize a Power LED object. */		
  Led_ctor(&me->super,_color,_state);	
  me->diameter  = _diameter;
  me->voltage   = _voltage;

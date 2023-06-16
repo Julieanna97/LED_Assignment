@@ -6,7 +6,8 @@
 
 LedState_Type led1_state;
 
-int main(void){
+int main(void)
+{
 	
 	USART2_Init();
 
@@ -44,4 +45,7 @@ int main(void){
 		this_thread::sleep_for(chrono::milliseconds(1000));
 
 	}
+
+
+	return 0;
 }
